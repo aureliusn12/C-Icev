@@ -11,12 +11,13 @@ int salario;
 int main(){
 
 printf("Insira seu salario: \n");
-scanf("%d", salario);
+scanf("%d", &salario);
+
 
 if(salario >=1800 && salario <= 8000){
     printf("salario valido para financiamento");
 }
-else if(salario <=1800 || salario >= 8000){
+else{
     printf("salario fora da taxa permitida para financiamento");
 }
 
