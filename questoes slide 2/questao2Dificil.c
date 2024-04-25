@@ -10,6 +10,7 @@ char sigla[2];
 char opcao[30];
 
 int main(){
+
 int repeat = 1;
 
 do
@@ -26,7 +27,7 @@ do
         printf("Voce e piauiense\n");
     }
     else if(strcmp(sigla, "BA") == 0){
-        printf("Voce e baiano\n");
+        printf("Voce é baiano\n");
     }   
     else if (strcmp(sigla, "MA") == 0){
         printf("Voce e maranhense\n");

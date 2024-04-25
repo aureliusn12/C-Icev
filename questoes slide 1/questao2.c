@@ -17,10 +17,10 @@ SetConsoleOutputCP(CPAGE_UTF8);
 setlocale(LC_ALL, "Brazilian_Portuguese");
 
 printf("Insira sua idade: \n");
-scanf("%d", idade);
+scanf("%d", &idade);
 
 if(idade < 18 || idade > 95){
-    printf("Você não pde tirar carteira de motorista.\n");
+    printf("Você não pode tirar carteira de motorista.\n");
 }
 else{
     printf("Você pode tirar carteira de motorista");

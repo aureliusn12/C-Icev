@@ -1,28 +1,21 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <locale.h>
-
+#include <windows.h>
 #include <string.h>
 
-
-
 char instituicao[30];
-
 char curso[30];
-
 char disciplina[30];
-
 char aluno[30];
-
-
 
 int main (){
 
-setlocale(LC_ALL, "Portuguese_Brazil");
+UINT CPAGE_UTF8 = 65001;/*https://cursos.alura.com.br/forum/topico-windows-e-palavras-com-acentuacao-61327*/
+UINT CPAGE_DEFAULT = GetConsoleOutputCP();
+SetConsoleOutputCP(CPAGE_UTF8);
+setlocale(LC_ALL, "Brazilian_Portuguese");
 
-/* Entrada de dados*/
 
 printf("Informe a instituição: \n");
 gets(instituicao);
