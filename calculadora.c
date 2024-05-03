@@ -39,6 +39,7 @@ int saida(){
     printf("O resultado da operacao e: %.2lf\n", res);
 }
 int main (){
+
 do{   
     MenuCalculadora();
     switch(operacao)
