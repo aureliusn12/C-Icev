@@ -1,3 +1,10 @@
+
+
+
+
+/*REVER A QUESTAO DE LETRAS E DIVISAO POR ZERO*/
+
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
