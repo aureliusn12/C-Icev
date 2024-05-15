@@ -11,6 +11,7 @@
 
 float valor1, valor2, res;
 int operacao;
+int retorno;
 
 void MenuCalculadora (){
     printf("+=======================================+\n");
@@ -26,8 +27,11 @@ void MenuCalculadora (){
 }
 
 void Entrada(){
+     do {
      printf("Digite o primeiro valor: \n");
-     scanf("%f", &valor1);
+     retorno = scanf("%f", &valor1);
+     } while (retorno == 0)
+         
      printf("Digite o segundo valor: \n");
      scanf("%f", &valor2);
 } 
