@@ -30,7 +30,7 @@ void Entrada(){
      do {
      printf("Digite o primeiro valor: \n");
      retorno = scanf("%f", &valor1);
-     } while (retorno == 0)
+     } while (retorno == 0);
          
      printf("Digite o segundo valor: \n");
      scanf("%f", &valor2);
