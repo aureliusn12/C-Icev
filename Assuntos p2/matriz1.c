@@ -13,21 +13,16 @@ int main(){
     scanf("%d", &Dcoluna);
 
     int matriz [Dlinha] [Dcoluna];
-    printf("Informe os valores da matriz: %d x %d \n", &i, &j);
+    printf("Informe os valores da matriz: %d x %d \n", Dlinha, Dcoluna);
     for (i=0; i<Dlinha; i++){
         for (j=0; j<Dcoluna; j++){
-            Scanf("%d", &matriz[i][j]);
+            scanf("%d", &matriz[i][j]);
         }
     }
     for (i=0; i<Dlinha; i++){
         for(j=0; j<Dcoluna; j++){
-            printf("|4%d", matriz [i][j]);
-            printf("\n");
+            printf("|%4d", matriz [i][j]);
         }
+        printf("|\n");
     }
-
-
-
-
-
 }
