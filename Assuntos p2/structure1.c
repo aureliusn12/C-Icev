@@ -26,13 +26,10 @@ int main(){
         printf("\n");
     }
     for(int i=0; i < 5; i++){
-        printf("%s", listaProdutos[i].codigo);
-        printf("\n");
-        printf("%s", listaProdutos[i].nome);
-        printf("\n");
-        printf("%d", listaProdutos[i].quantidade);
-        printf("\n");
-        printf("%d", listaProdutos[i].valor);
+        printf("Codigo: %s \n", listaProdutos[i].codigo);
+        printf("Nome: %s \n", listaProdutos[i].nome);
+        printf("Quantidade: %d\n", listaProdutos[i].quantidade);
+        printf("Valor: %d\n", listaProdutos[i].valor);
         printf("\n");
     }
 }
