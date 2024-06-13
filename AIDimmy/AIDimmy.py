@@ -1,8 +1,8 @@
 import json 
-from difflib import Achar_combinacoes_aproximadas
+from difflib import get_close_matches
 
 
-def Carregar_Chat_IA(file_path: str) -> dict:
+def Load_Chat_IA(file_path: str) -> dict:
     with open(file_path, 'r') as file:
         data: dict = json.load(file)
         return data
@@ -14,7 +14,7 @@ def Salvar_Chat_IA(file_path: str, data: dict):
         
         
 def Achar_Melhor_combinacao(pergunta_usuario: str, perguntas: list[str])-> str| None:
-    resultados: list = Achar_combinacoes_aproximadas(pergunta_usuario, perguntas, n=1, precisao=0.6)
+    resultados: list = get_close_matches(pergunta_usuario, perguntas, n=1, precisao=0.6)
     return resultados[0] if resultados else None
 
 
@@ -24,7 +24,7 @@ def Achar_Resposta_Da_Questao(pergunta: str, Chat_IA: dict) -> str | None:
             return p["resposta"]
 
 def Chat_bot():
-    Chat_IA: dict = Carregar_Chat_IA("Chat_IA.json")
+    Chat_IA: dict = Load_Chat_IA("Chat_IA.json")
     
     while True:
         input_usuario: str = input("você: ")
